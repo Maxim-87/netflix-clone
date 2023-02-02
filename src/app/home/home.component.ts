@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { Component, OnInit } from '@angular/core';
 import { TrendingService } from '../trending.service';
 
