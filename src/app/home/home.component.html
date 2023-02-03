@@ -88,7 +88,7 @@
         En ce moment au cinéma :
       </h1>
       <div class="row">
-        <a class="col-sm-4 poster"
+        <a class="col-sm-4 poster filmPoster"
            *ngFor="let film of nowplaying"
            [routerLink]="['/detailfilm', film.id]"
            role="link">
@@ -96,8 +96,8 @@
                class="img-fluid"
                alt="film poster">
           <div class="middle">
-            <h3>{{film.title}}</h3>
-            <h5>{{film.vote_average}}/10</h5>
+            <h3 aria-label="title of the film">{{film.title}}</h3>
+            <h5 aria-label="rating of the film">{{film.vote_average}}/10</h5>
           </div>
         </a>
       </div>
