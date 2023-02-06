@@ -3,17 +3,24 @@
        class="carousel slide"
        data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions"
-          data-slide-to="0"
-          class="active">
+      <li
+        data-target="#carouselExampleCaptions"
+        data-slide-to="0"
+        class="active"
+        tabindex="0"
+        aria-label="open main poster 1">
       </li>
       <li data-target="#carouselExampleCaptions"
           data-slide-to="1"
-          class="">
+          class=""
+          tabindex="0"
+          aria-label="open main poster 2">
       </li>
       <li data-target="#carouselExampleCaptions"
           data-slide-to="2"
-          class="">
+          class=""
+          tabindex="0"
+          aria-label="open main poster 3">
       </li>
     </ol>
     <div class="carousel-inner">
@@ -25,7 +32,7 @@
              data-holder-rendered="true">
         <div class="carousel-caption d-none d-md-block">
           <h5>{{trend[0].original_title}}</h5>
-          <button class="btn btn-primary"
+          <button class="btn btn-primary linkArrow"
                   [routerLink]="['/detailfilm', trend[0].id]">
             Read more
           </button>
@@ -59,22 +66,27 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev"
+    <a class="carousel-control-prev focusElement"
        href="#carouselExampleCaptions"
        role="button"
-       data-slide="prev">
-      <span class="carousel-control-prev-icon"
-            aria-hidden="true">
+       data-slide="prev"
+       aria-label="previous main poster"
+    >
+      <span class="carousel-control-prev-icon linkArrow>"
+            aria-hidden="true"
+      >
       </span>
       <span class="sr-only">
         Previous
       </span>
     </a>
-    <a class="carousel-control-next"
+    <a class="carousel-control-next focusElement"
        href="#carouselExampleCaptions"
        role="button"
-       data-slide="next">
-      <span class="carousel-control-next-icon"
+       data-slide="next"
+       aria-label="next main poster"
+    >
+      <span class="carousel-control-next-icon "
             aria-hidden="true">
       </span>
       <span class="sr-only">Next</span>
@@ -88,7 +100,7 @@
         En ce moment au cinéma :
       </h1>
       <div class="row">
-        <a class="col-sm-4 poster filmPoster"
+        <a class="col-sm-4 poster"
            *ngFor="let film of nowplaying"
            [routerLink]="['/detailfilm', film.id]"
            role="link">

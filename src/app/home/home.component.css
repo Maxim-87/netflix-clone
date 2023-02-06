@@ -1,3 +1,7 @@
 .carousel-item {
   max-height: 90vh !important;
 }
+
+.focusElement:focus {
+  border: 2px solid white;
+}
