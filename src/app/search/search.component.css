@@ -1,0 +1,5 @@
+.focusElement:focus {
+  border: 2px solid white;
+  background-color: deepskyblue;
+}
+
