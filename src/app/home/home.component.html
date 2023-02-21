@@ -8,19 +8,25 @@
         data-slide-to="0"
         class="active"
         tabindex="0"
-        aria-label="open main poster 1">
+        aria-label="open main poster 1"
+        [class.active]="activeClass === '1'"
+        (keydown.enter)="onActive('1')">
       </li>
       <li data-target="#carouselExampleCaptions"
           data-slide-to="1"
           class=""
           tabindex="0"
-          aria-label="open main poster 2">
+          aria-label="open main poster 2"
+          [class.active]="activeClass === '2'"
+          (keydown.enter)="onActive('2')">
       </li>
       <li data-target="#carouselExampleCaptions"
           data-slide-to="2"
           class=""
           tabindex="0"
-          aria-label="open main poster 3">
+          aria-label="open main poster 3"
+          [class.active]="activeClass === '3'"
+          (keydown.enter)="onActive('3')">
       </li>
     </ol>
     <div class="carousel-inner">
