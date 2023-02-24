@@ -5,3 +5,10 @@
 .focusElement:focus {
   border: 2px solid white;
 }
+
+.button {
+  width: 25px;
+  height: 10px;
+  border-radius: 8px;
+  opacity: 0.5;
+}

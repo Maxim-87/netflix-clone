@@ -10,7 +10,6 @@ import { TrendingService } from '../trending.service';
 })
 export class HomeComponent implements OnInit {
 
-  activeClass: string = '';
   constructor(private trendService : TrendingService) { }
   trend;
   nowplaying;
@@ -24,9 +23,5 @@ export class HomeComponent implements OnInit {
     .subscribe(test=>{
       this.nowplaying=test['results'];
     })
-  }
-  onActive(poster) {
-    this.activeClass = poster;
-    console.log(this.activeClass);
   }
 }

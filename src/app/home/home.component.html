@@ -2,33 +2,27 @@
   <div id="carouselExampleCaptions"
        class="carousel slide"
        data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li
+    <div class="carousel-indicators">
+      <button
         data-target="#carouselExampleCaptions"
         data-slide-to="0"
-        class="active"
+        class="button active"
         tabindex="0"
-        aria-label="open main poster 1"
-        [class.active]="activeClass === '1'"
-        (keydown.enter)="onActive('1')">
-      </li>
-      <li data-target="#carouselExampleCaptions"
+        aria-label="open main poster 1">
+      </button>
+      <button data-target="#carouselExampleCaptions"
           data-slide-to="1"
-          class=""
+          class="button"
           tabindex="0"
-          aria-label="open main poster 2"
-          [class.active]="activeClass === '2'"
-          (keydown.enter)="onActive('2')">
-      </li>
-      <li data-target="#carouselExampleCaptions"
+          aria-label="open main poster 2">
+      </button>
+      <button data-target="#carouselExampleCaptions"
           data-slide-to="2"
-          class=""
+          class="button"
           tabindex="0"
-          aria-label="open main poster 3"
-          [class.active]="activeClass === '3'"
-          (keydown.enter)="onActive('3')">
-      </li>
-    </ol>
+          aria-label="open main poster 3">
+      </button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100"
